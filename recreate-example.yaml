@@ -29,7 +29,7 @@ items:
       spec:
         containers:
         #- image: openshift/deployment-example:v1
-        - image: multiarch-origin-e2e/deployment-example
+        - image: multiarch-origin-e2e/deployment-example:v1
           name: deployment-example
           imagePullPolicy: Always
           ports:
