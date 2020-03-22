@@ -51,7 +51,7 @@ items:
     name: recreate-example
   spec:
     #dockerImageRepository: openshift/deployment-example
-    dockerImageRepository: multiarch-origin-e2e/deployment-example
+    dockerImageRepository: multiarch-origin-e2e/deployment-example:v1
 - apiVersion: v1
   kind: Route
   metadata:
