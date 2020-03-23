@@ -42,7 +42,7 @@ items:
         containerNames:
         - deployment-example
         from:
-          kind: docker
+          kind: ImageStreamTag
           name: recreate-example:latest
       type: ImageChange
 - apiVersion: v1
