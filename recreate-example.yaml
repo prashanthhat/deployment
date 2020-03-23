@@ -29,7 +29,7 @@ items:
       spec:
         containers:
         #- image: openshift/deployment-example:v1
-        - image: multiarch-origin-e2e/deployment-example:v1
+        - image: multiarch-origin-e2e/deployment-example
           name: deployment-example
           imagePullPolicy: Always
           ports:
@@ -42,7 +42,7 @@ items:
         containerNames:
         - deployment-example
         from:
-          kind: ImageStreamTag
+          kind: docker
           name: recreate-example:latest
       type: ImageChange
 - apiVersion: v1
